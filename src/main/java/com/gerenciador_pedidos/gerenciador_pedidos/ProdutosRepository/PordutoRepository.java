@@ -6,7 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface PordutoRepository extends JpaRepository<Produto, Long> {
-}
-
-public interface List<Produto> findByNome(String nome){
+    List<Produto> findByNome(String nome);
 }
